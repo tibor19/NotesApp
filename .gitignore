@@ -245,3 +245,5 @@ ModelManifest.xml
 .fake/
 dist/
 jspm_packages/
+NotesApp/typings/globals/
+NotesApp/typings/modules/
