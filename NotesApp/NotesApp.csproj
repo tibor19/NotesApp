@@ -315,7 +315,16 @@
     <Content Include="src-steps\12\bundles.js" />
     <Content Include="src-steps\12\config-snippet.js" />
     <Content Include="src-steps\13\test\unit\notebooks.spec.ts" />
+    <Content Include="src\app.css" />
     <Content Include="src\app.html" />
+    <Content Include="typings.json" />
+    <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\dummy.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+    <Content Include="src\welcome.css" />
+    <Content Include="src\welcome.html" />
+    <TypeScriptCompile Include="src\welcome.ts" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -342,11 +351,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="src\app.ts" />
-    <TypeScriptCompile Include="src\dummy.d.ts" />
-    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -391,7 +395,9 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /S /E /Y /K "$(TargetDir)..\src\*.html" "$(TargetDir)..\dist\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /S /E /Y /K "$(TargetDir)..\src\*.html" "$(TargetDir)..\dist\"
+xcopy /S /E /Y /K "$(TargetDir)..\src\*.css" "$(TargetDir)..\dist\"
+</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>rmdir /S /Q "$(TargetDir)..\dist\"</PreBuildEvent>
