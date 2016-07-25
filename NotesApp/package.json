@@ -1,0 +1,26 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "This is a simple note taking application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Notes",
+    "Aurelia",
+    "Workshop"
+  ],
+  "author": "Tiberiu Covaci <tibi@covaci.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "jspm": "^0.16.39",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
+  },
+  "jspm": {
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.8.10"
+    }
+  }
+}
