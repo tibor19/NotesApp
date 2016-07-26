@@ -1,28 +1,23 @@
-<<<<<<< 74f72690c7dd1cc8c2e585512687ba731a831eee
-<<<<<<< b2a5f65ea67d62c801e3ee1f0220f68b5085e8a4
-=======
->>>>>>> Create the starting app
 <template>
-  <require from="./app.css"></require>
+    <require from="bootstrap/css/bootstrap.min.css"></require>
+    <require from="font-awesome/css/font-awesome.min.css"></require>
+    <require from="./app.css"></require>
 
-  <header>
-    <h1>Aurelia Notes</h1>
-    <a class="button" href="#/notes/new">New Note</a>
-  </header>
+    <header>
+        <h1>Aurelia Notes</h1>
+        <a class="button" href="#/notes/new">New Note</a>
+    </header>
 
-  <main>
-    <nav class="main">
-      <!--TODO: Create sidebar nav-->
-    </nav>
-
-    <router-view></router-view>
-  </main>
-<<<<<<< 74f72690c7dd1cc8c2e585512687ba731a831eee
-=======
-﻿<template>
-    Empty page
-    
->>>>>>> Add support for Aurelia
-=======
->>>>>>> Create the starting app
+    <main>
+        <nav class="main">
+            <ul>
+                <li repeat.for="item of router.navigation" class="${item.isActive ? 'active' : ''}">
+                    <a href.bind="item.href" title.bind="item.title">
+                        <i class="fa fa-${item.settings.icon}"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <router-view></router-view>
+    </main>
 </template>

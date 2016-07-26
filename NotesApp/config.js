@@ -12,9 +12,14 @@ System.config({
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-rc.1.0.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-rc.1.0.7",
     "aurelia-router": "npm:aurelia-router@1.0.0-rc.1.0.5",
+    "bootstrap": "github:twbs/bootstrap@3.3.7",
+    "font-awesome": "npm:font-awesome@4.6.3",
     "typescript": "npm:typescript@1.8.10",
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
+    },
+    "github:twbs/bootstrap@3.3.7": {
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:aurelia-binding@1.0.0-rc.1.0.4": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0-rc.1.0.1",
@@ -129,6 +134,9 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-rc.1.0.0",
       "aurelia-path": "npm:aurelia-path@1.0.0-rc.1.0.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-rc.1.0.0"
+    },
+    "npm:font-awesome@4.6.3": {
+      "css": "github:systemjs/plugin-css@0.1.24"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
