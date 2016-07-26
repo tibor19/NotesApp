@@ -317,6 +317,9 @@
     <Content Include="src-steps\13\test\unit\notebooks.spec.ts" />
     <Content Include="src\app.css" />
     <Content Include="src\app.html" />
+    <Content Include="src\settings\index.css" />
+    <Content Include="src\settings\index.html" />
+    <TypeScriptCompile Include="src\settings\index.ts" />
     <Content Include="typings.json" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\main.ts" />
