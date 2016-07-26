@@ -49,6 +49,8 @@
     <TypeScriptSourceMap>True</TypeScriptSourceMap>
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot>src</TypeScriptSourceRoot>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -283,8 +285,13 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="src\app.css" />
     <Content Include="src\app.html" />
+    <TypeScriptCompile Include="src\backend\database.ts" />
+    <TypeScriptCompile Include="src\backend\server.ts" />
+    <Content Include="src\notebooks\index.css" />
+    <Content Include="src\notebooks\index.html" />
     <Content Include="src\settings\index.css" />
     <Content Include="src\settings\index.html" />
+    <TypeScriptCompile Include="src\notebooks\index.ts" />
     <TypeScriptCompile Include="src\settings\index.ts" />
     <Content Include="typings.json" />
     <TypeScriptCompile Include="src\app.ts" />
