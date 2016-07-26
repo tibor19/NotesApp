@@ -285,6 +285,7 @@
     <Content Include="src\app.html" />
     <Content Include="typings.json" />
     <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\dummy.d.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <Content Include="src\welcome.css" />
     <Content Include="src\welcome.html" />
