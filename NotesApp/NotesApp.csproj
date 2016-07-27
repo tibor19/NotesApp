@@ -318,6 +318,8 @@
     <Content Include="src-steps\13\test\unit\notebooks.spec.ts" />
     <Content Include="src\app.css" />
     <Content Include="src\app.html" />
+    <Content Include="src\settings\index.css" />
+    <Content Include="src\settings\index.html" />
     <Content Include="src\welcome.css" />
     <Content Include="src\welcome.html" />
     <Content Include="Web.config" />
@@ -352,6 +354,7 @@
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\dummy.d.ts" />
     <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\settings\index.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
