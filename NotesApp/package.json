@@ -4,7 +4,12 @@
   "description": "This is a simple note taking application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typings": "typings install",
+    "jspm": "jspm install",
+    "postinstall": "npm run jspm && npm run typings",
+    "prestart": "npm install",
+    "start": "echo start"
   },
   "keywords": [
     "Notes",
@@ -22,6 +27,7 @@
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-rc.1.0.1",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-rc.1.0.7",
+      "aurelia-pal": "npm:aurelia-pal@^1.0.0-rc.1.0.0",
       "aurelia-router": "npm:aurelia-router@^1.0.0-rc.1.0.5"
     },
     "devDependencies": {
