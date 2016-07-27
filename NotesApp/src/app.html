@@ -1,16 +1,24 @@
 <template>
-  <require from="./app.css"></require>
+    <require from="bootstrap/css/bootstrap.min.css"></require>
+    <require from="font-awesome/css/font-awesome.min.css"></require>
+    <require from="./app.css"></require>
 
-  <header>
-    <h1>Aurelia Notes</h1>
-    <a class="button" href="#/notes/new">New Note</a>
-  </header>
+    <header>
+        <h1>Aurelia Notes</h1>
+        <a class="button" href="#/notes/new">New Note</a>
+    </header>
 
-  <main>
-    <nav class="main">
-      <!--TODO: Create sidebar nav-->
-    </nav>
+    <main>
+        <nav class="main">
+            <ul>
+                <li repeat.for="item of router.navigation" class="${item.isActive ? 'active' : ''}">
+                    <a href.bind="item.href" title.bind="item.title">
+                        <i class="fa fa-${item.settings.icon}" alt.bind="item.title"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <router-view></router-view>
-  </main>
+        <router-view></router-view>
+    </main>
 </template>

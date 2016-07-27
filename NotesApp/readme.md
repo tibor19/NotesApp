@@ -9,3 +9,6 @@ Go to project folder (Inside the solution folder) -> you need to have a package.
 npm install
 jspm install -y
 typings install
+
+jspm install bootstrap
+jspm install font-awesome
