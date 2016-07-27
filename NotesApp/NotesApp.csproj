@@ -50,6 +50,7 @@
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot>src</TypeScriptSourceRoot>
     <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptAllowSyntheticDefaultImports>true</TypeScriptAllowSyntheticDefaultImports>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -292,6 +293,7 @@
     <Content Include="src\settings\index.css" />
     <Content Include="src\settings\index.html" />
     <TypeScriptCompile Include="src\notebooks\index.ts" />
+    <Content Include="src\resources\elements\loading-indicator.js" />
     <TypeScriptCompile Include="src\settings\index.ts" />
     <Content Include="typings.json" />
     <TypeScriptCompile Include="src\app.ts" />
@@ -353,7 +355,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>13582</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:13582/</IISUrl>
+          <IISUrl>http://localhost:13583/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -373,6 +375,7 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy /S /E /Y /K "$(TargetDir)..\src\*.html" "$(TargetDir)..\dist\"
 xcopy /S /E /Y /K "$(TargetDir)..\src\*.css" "$(TargetDir)..\dist\"
+xcopy /S /E /Y /K "$(TargetDir)..\src\*.js" "$(TargetDir)..\dist\"
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
