@@ -316,7 +316,10 @@
     <Content Include="src-steps\12\bundles.js" />
     <Content Include="src-steps\12\config-snippet.js" />
     <Content Include="src-steps\13\test\unit\notebooks.spec.ts" />
+    <Content Include="src\app.css" />
     <Content Include="src\app.html" />
+    <Content Include="src\welcome.css" />
+    <Content Include="src\welcome.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -348,6 +351,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\dummy.d.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
