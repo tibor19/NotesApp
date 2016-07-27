@@ -393,7 +393,8 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /S /E /Y /K "$(TargetDir)..\src\*.html" "$(TargetDir)..\dist\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /S /E /Y /K "$(TargetDir)..\src\*.*" "$(TargetDir)..\dist\"
+</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>rmdir /S /Q "$(TargetDir)..\dist\"</PreBuildEvent>
