@@ -330,6 +330,7 @@
     <TypeScriptCompile Include="src\notes\demo-value-converter.ts" />
     <TypeScriptCompile Include="src\notes\detail.ts" />
     <TypeScriptCompile Include="src\notes\no-selection.ts" />
+    <Content Include="src\resources\dialogs\message-box.html" />
     <Content Include="src\settings\index.css" />
     <Content Include="src\settings\index.html" />
     <Content Include="src\welcome.css" />
@@ -371,6 +372,8 @@
     <TypeScriptCompile Include="src\notebooks\index.ts" />
     <Content Include="src\resources\elements\loading-indicator.js" />
     <TypeScriptCompile Include="src\notes\index.ts" />
+    <TypeScriptCompile Include="src\resources\dialogs\common-dialogs.ts" />
+    <TypeScriptCompile Include="src\resources\dialogs\message-box.ts" />
     <TypeScriptCompile Include="src\resources\value-converters\truncate.ts" />
     <TypeScriptCompile Include="src\settings\index.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
