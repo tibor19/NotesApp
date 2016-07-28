@@ -321,6 +321,11 @@
     <Content Include="src\app.html" />
     <Content Include="src\notebooks\index.css" />
     <Content Include="src\notebooks\index.html" />
+    <Content Include="src\notes\index.css" />
+    <Content Include="src\notes\index.html" />
+    <Content Include="src\notes\no-selection.css" />
+    <Content Include="src\notes\no-selection.html" />
+    <TypeScriptCompile Include="src\notes\no-selection.ts" />
     <Content Include="src\settings\index.css" />
     <Content Include="src\settings\index.html" />
     <Content Include="src\welcome.css" />
@@ -361,6 +366,7 @@
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\notebooks\index.ts" />
     <Content Include="src\resources\elements\loading-indicator.js" />
+    <TypeScriptCompile Include="src\notes\index.ts" />
     <TypeScriptCompile Include="src\settings\index.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
