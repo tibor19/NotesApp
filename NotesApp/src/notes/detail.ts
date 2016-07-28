@@ -2,13 +2,14 @@ import {Server, IServer} from '../backend/server';
 import {Router, Redirect} from 'aurelia-router';
 import {inject} from 'aurelia-framework';
 import {CommonDialogs} from '../resources/dialogs/common-dialogs';
+import {EventAggregator} from 'aurelia-event-aggregator';
 
-@inject(Server, Router, CommonDialogs)
+@inject(Server, Router, CommonDialogs, EventAggregator)
 export class Detail {
     notebooks  = [];
     note;
     original;
-    constructor(private server: Server, private router: Router, private commonDialogs: CommonDialogs) {
+    constructor(private server: Server, private router: Router, private commonDialogs: CommonDialogs, private ea: EventAggregator) {
     }
 
     canActivate(params) {
@@ -31,12 +32,13 @@ export class Detail {
 
     edit(note) {
         this.note = note;
-        this.original = JSON.parse(JSON.stringify(note));
+        this.original = Object.assign(note);
     }
 
     save() {
         let isNew = !this.note.id;
         this.server.saveNote(this.note).then(note => {
+            this.ea.publish('note:saved', note);
             this.edit(note);
         });
     }
