@@ -295,6 +295,7 @@
     <Content Include="src\notes\no-selection.css" />
     <Content Include="src\notes\no-selection.html" />
     <TypeScriptCompile Include="src\notes\no-selection.ts" />
+    <TypeScriptCompile Include="src\resources\value-converters\truncate.ts" />
     <Content Include="src\settings\index.css" />
     <Content Include="src\settings\index.html" />
     <TypeScriptCompile Include="src\notebooks\index.ts" />
