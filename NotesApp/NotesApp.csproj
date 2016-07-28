@@ -360,6 +360,7 @@
     <TypeScriptCompile Include="src\dummy.d.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\notebooks\index.ts" />
+    <Content Include="src\resources\elements\loading-indicator.js" />
     <TypeScriptCompile Include="src\settings\index.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />

@@ -14,9 +14,13 @@ System.config({
     "aurelia-router": "npm:aurelia-router@1.0.0-rc.1.0.5",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "font-awesome": "npm:font-awesome@4.6.3",
+    "nprogress": "github:rstacruz/nprogress@0.2.0",
     "typescript": "npm:typescript@1.8.10",
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
+    },
+    "github:rstacruz/nprogress@0.2.0": {
+      "css": "github:systemjs/plugin-css@0.1.25"
     },
     "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@2.2.4"
