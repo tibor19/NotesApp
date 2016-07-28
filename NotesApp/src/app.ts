@@ -1,4 +1,4 @@
-import {Router, RouterConfiguration} from 'aurelia-router';
+import {Router, RouterConfiguration, activationStrategy} from 'aurelia-router';
 
 export class App {
     router: Router;
@@ -14,7 +14,8 @@ export class App {
                 nav: true,
                 title: 'Notes',
                 href: '#/notes?filter=none',
-                settings: { icon: 'file-text' }
+                settings: { icon: 'file-text' },
+                activationStrategy: activationStrategy.invokeLifecycle
             },
             { route: 'notebooks', moduleId: 'notebooks/index', nav: true, title: 'Notebooks', settings: { icon: 'book' } },
             { route: 'settings', moduleId: 'settings/index', nav: true, title: 'Settings', settings: { icon: 'cog' } }
