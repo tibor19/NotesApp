@@ -9,7 +9,5 @@ export class SettingsIndex {
     submit(e: Event) {
 
         alert(this.fullName);
-        console.log(e);
-        // e.preventDefault();
     }
 }

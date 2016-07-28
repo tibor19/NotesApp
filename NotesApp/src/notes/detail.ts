@@ -30,6 +30,12 @@ export class Detail {
           });
     }
 
+    activate() {
+        if (this.note.id) {
+            this.ea.publish('note:editing', this.note);
+        }
+    }
+
     edit(note) {
         this.note = note;
         this.original = Object.assign(note);
@@ -40,6 +46,10 @@ export class Detail {
         this.server.saveNote(this.note).then(note => {
             this.ea.publish('note:saved', note);
             this.edit(note);
+
+            if (isNew) {
+                this.router.navigateToRoute('edit', { noteId: note.id }, { replace: true, trigger: true });
+            }
         });
     }
 

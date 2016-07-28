@@ -10,7 +10,7 @@ export interface IServer {
 export class Server implements IServer {
     newNote(): INote {
         return {
-            id: 0,
+            
             title: 'New Note',
             body: '',
             notebookId: database.notebooks[0].id
@@ -31,7 +31,6 @@ export class Server implements IServer {
             title: x.title,
             body: x.body
         }));
-
         return Promise.resolve(results);
     }
 
@@ -51,13 +50,13 @@ export class Server implements IServer {
         let existing : INote;
 
         if (note.id) {
-            existing = database.notes.  find(x => x.id === note.id);
+            existing = database.notes.find(x => x.id === note.id);
         } else {
             existing = { id: database.nextId() };
             database.notes.push(existing);
         }
 
-        Object.assign(existing, note);
+        existing = Object.assign(existing, note);
         return Promise.resolve(JSON.parse(JSON.stringify(existing)));
     }
 
