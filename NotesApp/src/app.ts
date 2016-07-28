@@ -13,7 +13,7 @@ export class App {
                 moduleId: 'notes/index',
                 nav: true,
                 title: 'Notes',
-                href: '#/notes?filter=none',
+                //href: 'notes?filter=none',
                 settings: { icon: 'file-text' },
                 activationStrategy: activationStrategy.invokeLifecycle
             },
